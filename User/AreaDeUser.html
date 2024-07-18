@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de Vídeos e PDFs</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="background-image">
+        <!--<img src="img/fundo.jpg">-->
+    </div>
+    <div class="container">
+        <center>
+        <h1>Área do Usuário</h1>
+        <form id="uploadForm">
+            <label for="videoUpload">Upload de Vídeo:</label>
+            <input type="file" id="videoUpload" accept="video/*" required>
+
+            <label for="pdfUpload">Upload de PDF:</label>
+            <input type="file" id="pdfUpload" accept="application/pdf" required>
+            
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div id="uploads">
+            <h2>Seus Uploads</h2>
+            <ul id="uploadList"></ul>
+        </div>
+    </center>
+    </div>
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <video id="modalVideo" controls></video>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
